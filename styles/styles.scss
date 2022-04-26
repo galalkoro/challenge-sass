@@ -1,8 +1,6 @@
 
-
-$primary_1: red;
-$primary_2: blue;
-
+@import "./mixin";
+ $red: 16px;
 
 body {
     font: 100% "Space Mono", monospace;
@@ -14,10 +12,9 @@ body {
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     background-attachment: fixed
-    
+   
 
 }
-
 
 
 
@@ -37,7 +34,7 @@ article section {
     flex-grow: 1;
     flex-basis: 45%;
     border: 1px silver solid;
-    padding: 16px;
+    padding: $red;
     margin: 16px;
     clear: both;
     overflow: auto;
@@ -93,9 +90,10 @@ h6 {
     margin-bottom: 0px
 }
 
-.message,
-.success,
-.error,
+$message: green;
+$success:  green;
+$error:  red;
+
 .warning {
     border: 1px solid #ccc;
     padding: 10px;
@@ -105,13 +103,13 @@ h6 {
 }
 
 .success {
-    background-color: green
+    background-color: $success
 }
 
 .error {
-    background-color: red
+    background-color: $error
 }
 
 .warning {
-    background-color: orange
+    background-color: $message
 }
