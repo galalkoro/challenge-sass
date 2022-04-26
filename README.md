@@ -82,4 +82,4 @@ The Sass syntax, also known as the indented syntax, was the initial and only way
      }
 
 
-[Github Repo](galalkoro.github.io/challenge-sass/)
+[Github Repo](https://github.com/galalkoro/challenge-sass)
